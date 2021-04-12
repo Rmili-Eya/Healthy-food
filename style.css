@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body{
+    overflow-x: hidden !important;
+    font-family: 'Anton', sans-serif;
+}
+.container-fluid{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.titre{
+background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));}
+HTML CSSResult Skip Results Iframe
+EDIT ON
+/* GLOBAL STYLES */
+body {
+ 
+  display: flex;
+  justify-content: center;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    text-align: center;
+  color: #fff;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 40px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #ccff90; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin-top:  15%; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #ccff90 }
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about img {
+    width: 50%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 30px;
+  }
+
+  
+  .about p {
+    font-size: 18px;
+  }
+nav a{
+    color: #1c1c1c;
+    font-size: 18px;
+    position: relative;
+}
+nav a:hover{
+color: #7fad39;
+}
+.a1::after{
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 100%;
+height: 2px;
+background: #7fad39;
+content: " ";
+}
+h1 {
+    font-weight: 700;
+    color: #1c1c1c;
+    position: relative;
+    text-align: center;
+}
+.product-title::after{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -15px;
+    width: 80px;
+    height: 4px;
+    background: #7fad39;
+    content: " ";  
+    margin: 0 auto;
+}
