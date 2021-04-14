@@ -7,11 +7,37 @@
     <title>Shop</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./Css/bootstrap.css" />
+    <script src="./shop.js" async></script>
+
   </head>
 
   <body>
-    <header>
-      <div class="container-fluid d-flex">
+    <header class="back">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Notre histoire</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nos Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" >Nos Produits</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!--
+      <div class="container-fluid d-flex background">
         <div class="row">
           <div class="col-md-4">
             <img
@@ -42,6 +68,7 @@
           </div>
         </div>
       </div>
+      -->
       <div class="card-img-overlay typewriter">
         <div class="row">
           <h1 class="titre">“HEALTHY FOOD, HEALTHY LIFE ”</h1>
@@ -78,7 +105,7 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card" style="width: 18rem">
-                <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
+                <img class="card-img-top" src="./assets/salade.jpg"  alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Kalé beauté</h5>
                   <p class="card-text">
@@ -86,13 +113,16 @@
                     up the bulk of the card's content.
                   </p>
                   <hr />
-                  <a href="#" class="btn btn-success">Add to cart</a>
+                  <div>
+                    <a href="#" class="btn btn-success">Add to cart</a>
+                   <span class="card-price">$10</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card" style="width: 18rem">
-                <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
+                <img class="card-img-top" src="./assets/salade.jpg" />
                 <div class="card-body">
                   <h5 class="card-title">Kalé beauté</h5>
                   <p class="card-text">
@@ -167,8 +197,8 @@
         </div>
       </div>
     </div>
-    <div class="cart-items">
-      <div class="row">
+    <div class="cart-items mt-5">
+      <div class="row cart-row">
         <div class="col-md-4 cart-item cart-column">
           <img src="./assets/banner-02.jpg" width="100" height="100" alt="" />
           <span>Salade</span>
@@ -180,8 +210,26 @@
         </div>
       </div>
       <hr>
+      <div class="row cart-row">
+        <div class="col-md-4 cart-item cart-column">
+          <img src="./assets/banner-02.jpg" width="100" height="100" alt="" />
+          <span>Salade</span>
+        </div>
+        <div class="col-md-4 cart-price cart-column">$9.99</div>
+        <div class="col-md-4 cart-quantity cart-column">
+          <input class="cart-quantity-input" type="number" value="2" />
+          <button class="btn btn-danger" type="button">Remove</button>
+        </div>
+      </div>
+     <div class="row cart-total">
+       <div class="col-md-4"></div>
+       <div class="col-md-4"></div>
+       <div class="col-md-4">
+         <strong class="cart-total-title">Total</strong>
+         <span class="cart-total-price">$150</span>
+       </div>
+     </div>
     </div>
-
     <script src="./Js/bootstrap.js"></script>
   </body>
 </html>
