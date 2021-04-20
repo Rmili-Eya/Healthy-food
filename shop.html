@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./Css/bootstrap.css" />
-    <script src="./shop.js" async></script>
 
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="./shop.js" async></script>
 
-  <body>
-    <header class="back">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link " aria-current="page" href="#">Notre histoire</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Nos Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#" >Nos Produits</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+</head>
+
+<body>
+  <!----->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Notre histoire</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nos Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Nos Produits</a>
+          </li>
+          <li class="nav-item cart">
+            <a href="#" class="nav-link d-flex">
+              <i class="fa fa-shopping-bag"></i>
+              <span class="badge">3</span>
+              <p data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">My Cart</p>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="cart-items mt-5">
+
+                  </div>
+                  <div class="row cart-total">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                      <strong class="cart-total-title bg-primary">Total</strong>
+                      <span class="cart-total-price  bg-primary"></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </a>
       </div>
-      <!--
-      <div class="container-fluid d-flex background">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="./assets/pexels-photo-1211887.jpeg"
-              class="img"
-              width="450px"
-              height="500px"
-              alt=""
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="./assets/pexels-photo-4117547.jpeg"
-              class="img"
-              width="450px"
-              height="500px"
-              alt=""
-            />
-          </div>
-          <div class="col-md-4">
-            <img
-              src="./assets/pexels-photo-414262.jpeg"
-              class="img"
-              width="450px"
-              height="500px"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      -->
+
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  </div>
+  <header>
+    <div class="back">
       <div class="card-img-overlay typewriter">
         <div class="row">
           <h1 class="titre">“HEALTHY FOOD, HEALTHY LIFE ”</h1>
         </div>
       </div>
-    </header>
-    <!--
+    </div>
+
+  </header>
+  <!--
 <div class="section-about">
   <div class="about">
      <img src="./assets/2.jpeg" alt="">
@@ -88,148 +97,220 @@
   </div>
  </div>
  -->
-    <div class="products-section mt-5">
-      <div class="row">
-        <h1 class="product-title">Featured Products</h1>
-      </div>
-      <div class="row">
-        <nav class="nav justify-content-center mt-5">
-          <a class="nav-link a1" href="#">All</a>
-          <a class="nav-link" href="#">Oranges</a>
-          <a class="nav-link" href="#">Fresh Meat</a>
-          <a class="nav-link" href="#">Fast Food</a>
-        </nav>
-      </div>
-      <div class="card-product mt-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="./assets/salade.jpg"  alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Kalé beauté</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <hr />
-                  <div>
-                    <a href="#" class="btn btn-success">Add to cart</a>
-                   <span class="card-price">$10</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 18rem">
-                <img class="card-img-top" src="./assets/salade.jpg" />
-                <div class="card-body">
-                  <h5 class="card-title">Kalé beauté</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <hr />
+  <div class="products-section mt-5">
+    <div class="row">
+      <h1 class="product-title">Featured Products</h1>
+    </div>
+    <div class="row">
+      <nav class="nav justify-content-center mt-5">
+        <a class="nav-link a1" href="#">All</a>
+        <a class="nav-link" href="#">Oranges</a>
+        <a class="nav-link" href="#">Fresh Meat</a>
+        <a class="nav-link" href="#">Fast Food</a>
+      </nav>
+    </div>
+    <div class="card-product mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top" src="./assets/salade.jpg" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kalé beauté</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <hr />
+                <div>
                   <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 18rem">
-                <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Kalé beauté</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <hr />
-                  <a href="#" class="btn btn-success">Add to cart</a>
+                  <span class="card-price">$10</span>
                 </div>
               </div>
             </div>
           </div>
-          <!------------2éme ligne ------------->
-          <div class="row mt-3">
-            <div class="col-md-4">
-              <div class="card" style="width: 18rem">
-                <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Kalé beauté</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <hr />
-                  <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img class="card-img-top" src="./assets/salade.jpg" />
+              <div class="card-body">
+                <h5 class="card-title">Kalé beauté</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <hr />
+                <a href="#" class="btn btn-success">Add to cart</a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 18rem">
-                <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Kalé beauté</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <hr />
-                  <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kalé beauté</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <hr />
+                <a href="#" class="btn btn-success">Add to cart</a>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="card" style="width: 18rem">
-                <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Kalé beauté</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
-                  <hr />
-                  <a href="#" class="btn btn-success">Add to cart</a>
-                </div>
+          </div>
+        </div>
+        <!------------2éme ligne ------------->
+        <div class="row mt-3">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kalé beauté</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <hr />
+                <a href="#" class="btn btn-success">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kalé beauté</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <hr />
+                <a href="#" class="btn btn-success">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img src="./assets/salade.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kalé beauté</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make
+                  up the bulk of the card's content.
+                </p>
+                <hr />
+                <a href="#" class="btn btn-success">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="cart-items mt-5">
-      <div class="row cart-row">
-        <div class="col-md-4 cart-item cart-column">
-          <img src="./assets/banner-02.jpg" width="100" height="100" alt="" />
-          <span>Salade</span>
-        </div>
-        <div class="col-md-4 cart-price cart-column">$15</div>
-        <div class="col-md-4 cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="1" />
-          <button class="btn btn-danger" type="button">Remove</button>
+  </div>
+
+  <!-------------------------------->
+
+  <div class="cart-box-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="table-main table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Images</th>
+                  <th>Product Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                  <th>Remove</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="thumbnail-img">
+                    <a href="#">
+                      <img class="img-fluid" src="images/img-pro-01.jpg" alt="" />
+                    </a>
+                  </td>
+                  <td class="name-pr">
+                    <a href="#">
+                      Lorem ipsum dolor sit amet
+                    </a>
+                  </td>
+                  <td class="price-pr">
+                    <p>$ 80.0</p>
+                  </td>
+                  <td class="quantity-box"><input type="number" size="4" value="1" min="0" step="1"
+                      class="c-input-text qty text"></td>
+                  <td class="total-pr">
+                    <p>$ 80.0</p>
+                  </td>
+                  <td class="remove-pr">
+                    <a href="#">
+                      <i class="fas fa-times"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="thumbnail-img">
+                    <a href="#">
+                      <img class="img-fluid" src="images/img-pro-02.jpg" alt="" />
+                    </a>
+                  </td>
+                  <td class="name-pr">
+                    <a href="#">
+                      Lorem ipsum dolor sit amet
+                    </a>
+                  </td>
+                  <td class="price-pr">
+                    <p>$ 60.0</p>
+                  </td>
+                  <td class="quantity-box"><input type="number" size="4" value="1" min="0" step="1"
+                      class="c-input-text qty text"></td>
+                  <td class="total-pr">
+                    <p>$ 80.0</p>
+                  </td>
+                  <td class="remove-pr">
+                    <a href="#">
+                      <i class="fas fa-times"></i>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="thumbnail-img">
+                    <a href="#">
+                      <img class="img-fluid" src="images/img-pro-03.jpg" alt="" />
+                    </a>
+                  </td>
+                  <td class="name-pr">
+                    <a href="#">
+                      Lorem ipsum dolor sit amet
+                    </a>
+                  </td>
+                  <td class="price-pr">
+                    <p>$ 30.0</p>
+                  </td>
+                  <td class="quantity-box"><input type="number" size="4" value="1" min="0" step="1"
+                      class="c-input-text qty text"></td>
+                  <td class="total-pr">
+                    <p>$ 80.0</p>
+                  </td>
+                  <td class="remove-pr">
+                    <a href="#">
+                      <i class="fas fa-times"></i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      <hr>
-      <div class="row cart-row">
-        <div class="col-md-4 cart-item cart-column">
-          <img src="./assets/banner-02.jpg" width="100" height="100" alt="" />
-          <span>Salade</span>
-        </div>
-        <div class="col-md-4 cart-price cart-column">$9.99</div>
-        <div class="col-md-4 cart-quantity cart-column">
-          <input class="cart-quantity-input" type="number" value="2" />
-          <button class="btn btn-danger" type="button">Remove</button>
-        </div>
-      </div>
-     <div class="row cart-total">
-       <div class="col-md-4"></div>
-       <div class="col-md-4"></div>
-       <div class="col-md-4">
-         <strong class="cart-total-title">Total</strong>
-         <span class="cart-total-price">$150</span>
-       </div>
-     </div>
-    </div>
-    <script src="./Js/bootstrap.js"></script>
-  </body>
+      <!---------------------------------->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>

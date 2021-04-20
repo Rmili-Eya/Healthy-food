@@ -10,6 +10,7 @@ function ready(){
         let button=removeCartItemsButtons[i];
         button.addEventListener('click',removeCartItem)
     }
+
     let quantityInputs=document.getElementsByClassName('cart-quantity-input');
     for(let i=0;i<quantityInputs.length;i++)
     {
@@ -21,6 +22,11 @@ function ready(){
         addButton=addToCartButtons[i];
         addButton.addEventListener('click',addToCart);
     }
+}
+function removeCartItem(event){
+    let buttonClicked=event.target;//recupérer la boutton cliquer 
+    buttonClicked.parentElement.parentElement.parentElement.remove();
+    updateCartTotal();
 }
 function addToCart(event){
     
@@ -34,7 +40,7 @@ addItemToCart(title,price,imageSrc)
 }
 function addItemToCart(title,price,imageSrc){
    let row=document.createElement('div') ;
-   var cartRowContent = `      <div class="row cart-row">
+   var cartRowContent = `<div class="row cart-row">
    <div class="col-md-4 cart-item cart-column">
      <img src="${imageSrc}" width="100" height="100" alt="" />
      <span>${title}</span>
@@ -48,6 +54,7 @@ function addItemToCart(title,price,imageSrc){
    row.innerHTML = cartRowContent;
    let cartItems2=document.getElementsByClassName('cart-items')[0]
     cartItems2.appendChild(row)
+    updateCartTotal()
 }
 function quantityChanged(event){
     let input =event.target;
@@ -57,11 +64,7 @@ function quantityChanged(event){
     }
     updateCartTotal()
 }
-function removeCartItem(event){
-    let buttonClicked=event.target;
-    buttonClicked.parentElement.parentElement.remove();
-    updateCartTotal();
-}
+
 
 function updateCartTotal(){
     let total=0;
